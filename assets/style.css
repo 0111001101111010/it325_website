@@ -1,3 +1,9 @@
+.home .jumbotron h1{
+  font-weight: bold;
+  font-size:50;
+  color:blue;
+}
+
 html {
   background: url("bg.png") repeat;
 }
