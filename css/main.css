@@ -1,12 +1,38 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+   Stanley's custom styles
    ========================================================================== */
 
-
-.container.about{
-	background-color: green;
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    align:center;
+}
+#center {
+	align:center;
+	text-align:center;
+}
+#test {
+	background-color: rgb(252, 230, 201);
+	font-family: "cosmic-sans";
+	text-align: center;
+	color:#a23322;
+}
+li {
+	font-size: 20px;
+}
+tr {
+	text-align: center;
+}
+td {
+	text-align: center;
+}
+th {
+	text-align: center;
+}
+table{
+	text-align: center;
 }
 
 
