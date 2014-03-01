@@ -1,4 +1,8 @@
+#nav{
+	font-size:24px;
+}
 #nav.affix {
+	font-size:24px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -6,6 +10,7 @@
 }
 
 #nav > .navbar-inner {
+	font-size:24px;
     border-left: 0;
     border-right: 0;
     border-radius: 0;
@@ -14,8 +19,38 @@
     -o-border-radius: 0;
 }
 #landing {
+	color:rgb(63,158,216);
+	position: top;
+	height: 900px;
+	background-size: cover;
 	background-position: center;
 	text-align: center;
-	background-image: url('http://blog.atomicreach.com/wp-content/uploads/2013/02/typing.jpg');
-background-repeat: no-repeat;
+	background-image: url('http://farm4.staticflickr.com/3771/12755965134_19c059f09d_o.jpg');
+	text-shadow:rgb(109, 110, 113) 1 em;
+	background-repeat: no-repeat;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+#landing #box{
+	background-color: rgba(153, 149, 149, 0.35);
+	padding:50px;
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#landing h2{
+	color:rgb(:;63,198,216);
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  color: white;
+  background:transparent;
+}
+#content{
+ padding:100px;
+}
+
+footer{
+text-align:center
 }
