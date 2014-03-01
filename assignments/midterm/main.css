@@ -1,7 +1,8 @@
 #nav.affix {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    z-index:100;
 }
 
 #nav > .navbar-inner {
@@ -11,4 +12,10 @@
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -o-border-radius: 0;
+}
+#landing {
+	background-position: center;
+	text-align: center;
+	background-image: url('http://blog.atomicreach.com/wp-content/uploads/2013/02/typing.jpg');
+background-repeat: no-repeat;
 }
