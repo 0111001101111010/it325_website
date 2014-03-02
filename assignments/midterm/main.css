@@ -1,8 +1,8 @@
 #nav{
-	font-size:24px;
+	font-size:30px;
 }
 #nav.affix {
-	font-size:24px;
+	font-size:30px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -10,7 +10,7 @@
 }
 
 #nav > .navbar-inner {
-	font-size:24px;
+	font-size:30px;
     border-left: 0;
     border-right: 0;
     border-radius: 0;
@@ -36,6 +36,7 @@
 	width:600px;
 	margin-left:auto;
 	margin-right:auto;
+	padding:20px;
 }
 
 #landing h2{
@@ -66,8 +67,7 @@
 
 #form-2{
 	background:#aa1c3a;
-	height:600px;
-	float:relative;
+	float:absolute;
 	padding-bottom:100px
 
 }
@@ -79,3 +79,82 @@
 footer{
 text-align:center
 }
+	/********************
+	Challenges
+	********************/
+
+	#challenges {
+		background: #cf1b41;
+		color: white;
+	}
+	#challenges a{
+		color: ##7ab5d6;
+	}
+
+	#challenges div {
+	}
+
+	#challenges img {
+		display: block;
+		max-width: 100%;
+		margin: .5em auto;
+		margin-bottom: 1em;
+	}
+
+	#challenges h1 {
+	}
+
+	#challenges h2 {
+		margin-top: 10px;
+	}
+
+	#challenges p {
+		text-align: center;
+	}
+
+	#challenges .underlay {
+		margin-bottom: 1em;
+	}
+
+	/********************
+	Activities
+	********************/
+
+	#activities {
+		background: #B3EEF5;
+	}
+
+	#activities a{
+		color: #6D6E71;
+	}
+	#activities div {
+		margin-bottom: 1em;
+	}
+
+	#activities img {
+		display: block;
+		max-width: 75px;
+		margin: .5em auto;
+		margin-bottom: 0;
+	}
+
+	#activities h1 {
+		color: inherit;
+	}
+
+	#activities h2 {
+		margin-top: 10px;
+	}
+
+	#activities p {
+		text-align: center;
+	}
+
+	#activities div p:last-child {
+		font-size: 12px;
+		color: #5d242f;
+		font-weight: bold;
+		background: #D4ECF7;
+		border-radius: 6px;
+		padding: .5em 1em;
+	}
