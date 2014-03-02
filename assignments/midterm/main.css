@@ -1,8 +1,8 @@
 #nav{
-	font-size:30px;
+	font-size:26px;
 }
 #nav.affix {
-	font-size:30px;
+	font-size:26px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -10,7 +10,7 @@
 }
 
 #nav > .navbar-inner {
-	font-size:30px;
+	font-size:26px;
     border-left: 0;
     border-right: 0;
     border-radius: 0;
