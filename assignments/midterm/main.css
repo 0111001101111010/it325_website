@@ -18,6 +18,7 @@
     -moz-border-radius: 0;
     -o-border-radius: 0;
 }
+/** landing**/
 #landing {
 	color:rgb(63,158,216);
 	position: top;
@@ -32,7 +33,6 @@
 }
 #landing #box{
 	background-color: rgba(153, 149, 149, 0.35);
-	padding:50px;
 	width:600px;
 	margin-left:auto;
 	margin-right:auto;
@@ -41,12 +41,18 @@
 #landing h2{
 	color:rgb(:;63,198,216);
 }
-
+/** about**/
+#about {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
 .jumbotron {
   margin-bottom: 0px;
   color: white;
   background:transparent;
 }
+
 #content{
  padding:100px;
 }
