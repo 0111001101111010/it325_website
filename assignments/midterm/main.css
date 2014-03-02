@@ -52,6 +52,25 @@
   color: white;
   background:transparent;
 }
+/** register**/
+#form {
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	background: #cf1b41;
+}
+#form-1{
+	color:white;
+	font-size:26px;
+}
+
+#form-2{
+	background:#aa1c3a;
+	height:600px;
+	float:relative;
+	padding-bottom:100px
+
+}
 
 #content{
  padding:100px;
