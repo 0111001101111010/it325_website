@@ -1,0 +1,38 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Image Slideshow</title>
+	<script type="text/javascript" language="Javascript">
+	<!-- Hide script from old browsers
+
+	myPix = new Array("images/1.jpg","images/2.jpg",,"images/3.jpg","images/4.jpg","images/5.jpg","images/6.jpg","images/7.jpg")
+	myTitle = new Array("GrandCanyon","Barrier Reef","words")
+	thisPic = 0
+	imgCt = myPix.length - 1
+
+	function processPrevious() {
+		if (document.images && thisPic > 0) {
+			thisPic--
+			document.myPicture.src=myPix[thisPic]
+      document.myTitle.txt=myTile[thisPic]
+		}
+	}
+
+	function processNext() {
+		if (document.images && thisPic < imgCt) {
+			thisPic++
+			document.myPicture.src=myPix[thisPic]
+			document.myTitle.txt=myTile[thisPic]
+		}
+	}
+
+	// End hiding script from old browsers -->
+	</script>
+</head>
+<body bgcolor="#FFFFFF">
+	<h1 align="center">7 Wonders of the- world</h1>
+	<p align="center"><img src="images/1.jpg" name="myPicture" width="201" height="155" alt="Slideshow" /></p>
+	<h1 align="center"><a href="javascript:processPrevious()">&lt;&lt; Previous</a>&nbsp;&nbsp;<a href="javascript:processNext()">Next &gt;&gt;</a></h1>
+</body>
+</html>
