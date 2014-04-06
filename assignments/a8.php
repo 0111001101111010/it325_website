@@ -39,6 +39,9 @@
     </div>
       <div class="col-lg-6">
         <h2> Who else has been here?<h2>
+          <?php
+           include "guestbook.php";
+           ?>
       </div>
   </div>
 </div>
