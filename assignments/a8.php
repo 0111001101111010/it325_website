@@ -29,18 +29,28 @@
     <div class="col-lg-6">
       <h2>Guest Book</h2><br>
       <hr>
-      <form method="POST" class="form-horizontal" role="form" action="a8.php?action=add">
+      <form method="POST" class="form-horizontal" role="form" action="guestbook.php">
         <input type="text" name="name" class="form-control" id="inputUsername" placeholder="Name"><br>
         <input class="form-control" name="email" id="inputEmail" placeholder="Email"><br>
         <input type="textarea" name="comment" class="form-control" id="inputPassword" placeholder="Comment"><br>
         <hr>
         <button type="submit" class="btn btn-blue">Submit</button>
       </form>
+      <h2> Password Generator </h2>
+      <input type="text" name="random"  id="size" placeholder="Password Size?" value =8>
+      <br>
+    <input type="text" name="random"  id="random" placeholder="Random Password">
+    <button type="submit" id ="create" class="btn btn-blue">Generate</button>
     </div>
       <div class="col-lg-6">
-        <h2> Who else has been here?<h2>
+        <h2> Who else has been here?</h2>
           <?php
-           include "guestbook.php";
+          $my_file = 'file.txt';
+          $handle = fopen($my_file, 'a') or die('Cannot open file:'.$my_file);
+          $data = file_get_contents($my_file);
+
+          print("<p>".$data."</p>");
+
            ?>
       </div>
   </div>
@@ -48,6 +58,14 @@
 
 <!-- client side script for live form validation -->
 <script type='text/javascript'>
+//onclick append
+$("#create").on('click', function () {
+    var size = $("#size").val();
+    var randomstring = Math.random().toString(36).slice(-Math.abs( size));
+    $("#random").val(randomstring);
+    console.log("foo");
+});
+
 //input[name='name']"
 //var selectedValue= $("input[name='name']").val();
 $("input[name='name']").change(function(){
