@@ -27,7 +27,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
-      <h2>New User Registration:</h2><br>
+      <h2>Guest Book</h2><br>
       <hr>
       <form method="POST" class="form-horizontal" role="form" action="a8.php?action=add">
         <input type="text" name="name" class="form-control" id="inputUsername" placeholder="Name"><br>
@@ -45,9 +45,14 @@
 
 <!-- client side script for live form validation -->
 <script type='text/javascript'>
-  var inputUsername = new LiveValidation( "inputUsername", { validMessage: "Welcome! ", wait: 500 } );
-  inputUsername.add( Validate.Presence, { failureMessage: "Username Required" } );
-  inputUsername.add( Validate.Length, { minimum: 4});
+//input[name='name']"
+//var selectedValue= $("input[name='name']").val();
+$("input[name='name']").change(function(){
+    var inputUsername = new LiveValidation( "inputUsername", { validMessage: "Welcome friend!", wait: 500 } );
+    inputUsername.add( Validate.Presence, { failureMessage: "Your name has to be at least 4 characters" } );
+    inputUsername.add( Validate.Length, { minimum: 4});
+});
+
 
   var inputEmail = new LiveValidation( "inputEmail", { validMessage: "Valid Email!", wait: 500 } );
   inputEmail.add( Validate.Presence, { failureMessage: "Email Required" } );
@@ -55,11 +60,7 @@
 //  inputEmail.add( Validate.Format, { pattern: /cs.odu.edu/i, failureMessage: "CS Email Only" } );
 
   var inputPassword = new LiveValidation( "inputPassword", { validMessage: "Thanks for the comment!", wait: 500 } );
-  inputPassword.add( Validate.Presence, { failureMessage: "Password Required" } );
-
-  inputPassword_confirm.add( Validate.Presence, { failureMessage: "Password Comfirmation Required" } );
-  inputPassword_confirm.add( Validate.Comfirmation, {match: 'inputPassword'});
-
+  inputPassword.add( Validate.Presence, { failureMessage: "Comment Required" } );
 </script>
 
 
