@@ -28,9 +28,8 @@
   <div class="row">
     <div class="col-lg-6">
       <h2>New User Registration:</h2><br>
-      *Please fill out every field. We only accept ODU's CS email at this time.
       <hr>
-      <form method="POST" class="form-horizontal" role="form" action="registration.php?register=1">
+      <form method="POST" class="form-horizontal" role="form" action="a8.php?action=add">
         <input type="text" name="name" class="form-control" id="inputUsername" placeholder="Name"><br>
         <input class="form-control" name="email" id="inputEmail" placeholder="Email"><br>
         <input type="textarea" name="comment" class="form-control" id="inputPassword" placeholder="Comment"><br>
