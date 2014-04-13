@@ -26,33 +26,21 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-6">
-      <h2>Guest Book</h2><br>
+    <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2">
+    <?php
+    if(isset($_GET["submitted"])){
+      echo '<h2 style="color: green">Thanks for the Feedback!</h2><br>';
+    }
+    ?>
+      <h2>Whats on Your Mind</h2><br>
       <hr>
-      <form method="POST" class="form-horizontal" role="form" action="guestbook.php">
+      <form method="POST" class="form-horizontal" role="form" action="feedback.php">
         <input type="text" name="name" class="form-control" id="inputUsername" placeholder="Name"><br>
         <input class="form-control" name="email" id="inputEmail" placeholder="Email"><br>
-        <input type="textarea" name="comment" class="form-control" id="inputPassword" placeholder="Comment"><br>
+        <textarea type="textarea" name="comment" class="form-control" id="inputPassword" placeholder="Comment"></textarea><br>
         <hr>
         <button type="submit" class="btn btn-blue">Submit</button>
-      </form>
-      <h2> Password Generator </h2>
-      <input type="text" name="random"  id="size" placeholder="Password Size?" value =8>
-      <br>
-    <input type="text" name="random"  id="random" placeholder="Random Password">
-    <button type="submit" id ="create" class="btn btn-blue">Generate</button>
     </div>
-      <div class="col-lg-6">
-        <h2> Who else has been here?</h2>
-          <?php
-          $my_file = 'file.txt';
-          $handle = fopen($my_file, 'a') or die('Cannot open file:'.$my_file);
-          $data = file_get_contents($my_file);
-
-          print("<p>".$data."</p>");
-
-           ?>
-      </div>
   </div>
 </div>
 
@@ -90,7 +78,7 @@ $("input[name='name']").change(function(){
 <footer>
 <center>
 <div  class="row"></div>
-<a href="a7.html">
+<a href="a8.php">
 <span style="font-size:50px;" class="fa-stack fa-lg">
   <i class="fa fa-square fa-stack-2x"></i>
   <i class="fa fa-chevron-left fa-stack-1x fa-inverse"></i>
@@ -102,7 +90,7 @@ $("input[name='name']").change(function(){
   <i class="fa fa-home fa-stack-1x fa-inverse"></i>
 </span>
 </a>
-<a href="a9.php">
+<a href="a10.html">
 <span  style="font-size:50px;" class="fa-stack fa-lg">
   <i class="fa fa-square fa-stack-2x"></i>
   <i class="fa fa-chevron-right fa-stack-1x fa-inverse"></i>
