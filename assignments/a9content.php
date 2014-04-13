@@ -35,8 +35,11 @@
       <h2>Admin Feedback Form</h2><br>
       <hr>
       <form method="POST" class="form-horizontal" role="form" action="feedback.php">
+         <label for="name">Name</label>
         <input type="text" name="name" class="form-control" id="inputUsername" placeholder="Name"><br>
+        <label for="email">Email</label>
         <input class="form-control" name="email" id="inputEmail" placeholder="Email"><br>
+        <label for="comment">Comment</label>
         <textarea type="textarea" name="comment" class="form-control" id="inputPassword" placeholder="Comment"></textarea><br>
         <hr>
         <button type="submit" class="btn btn-blue">Submit</button>
