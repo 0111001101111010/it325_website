@@ -20,6 +20,8 @@
     <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="assets/js/hover.zoom.js"></script>
     <script src="assets/js/hover.zoom.conf.js"></script>
+    <link rel="stylesheet" href="bower_components/jquery-github/assets/base.css">
+    <script src="bower_components/jquery-github/dist/jquery.github.min.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -57,13 +59,25 @@
 	<div id="ww">
 	    <div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 centered">
-					<img src="assets/img/user.png" alt="Stanley">
-					<h1>Hi, I am Stanley!</h1>
-					<p>Hello everybody. I'm Stanley, a free handsome bootstrap theme coded by BlackTie.co. A really simple theme for those wanting to showcase their work with a cute & clean style.</p>
-					<p>Please, consider to register to <a href="http://eepurl.com/IcgkX">our newsletter</a> to be updated with our latest themes and freebies. Like always, you can use this theme in any project freely. Share it with your friends.</p>
-
-				</div><!-- /col-lg-8 -->
+        <h1>Courses</h1>
+				<div class="col-lg-4 centered">
+          <a class=" zoom green"href=""><img src="assets/img/user.png" alt="" />
+          </a>
+          <h3>CS410:Professional Development</h3>
+          <p>C3 Scorpion: a bioinformatics computation website for calculating protein structures</p>
+    				</div>
+        <div class="col-lg-4 centered">
+          <a class=" zoom green"href="http://www.cs.odu.edu/~410blue/"><img src="assets/img/user.png" alt="" />
+          </a>
+          <h3>CS418:Web Development</h3>
+          <p>Forum created throughout the semester using web technologies</p>
+        </div>
+        <div class="col-lg-4 centered">
+          <a class=" zoom green"href="https://weiglevm.cs.odu.edu/~szheng/proj3/"><img src="assets/img/user.png" alt="" />
+          </a>
+          <h3>IT325:Intro to Web Design</h3>
+          <p>Portfolio website along with assignments</p>
+        </div>
 			</div><!-- /row -->
 	    </div> <!-- /container -->
 	</div><!-- /ww -->
@@ -72,10 +86,15 @@
 	<!-- +++++ Projects Section +++++ -->
 
 	<div class="container pt">
+    <h1>Courses</h1>
 		<div class="row mt centered">
 			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port01.jpg" alt="" /></a>
+				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port01.jpg" alt="" />        <div data-repo="jquery-boilerplate/jquery-boilerplate" class="github-box-wrap"></div></a>
 				<p>APE</p>
+        <div data-repo="zenorocha/dracula-theme" class="github-box-wrap"></div>
+        <div data-repo="zenorocha/jquery-github" class="github-box-wrap"></div>
+        <div data-repo="zenorocha/hub.me" class="github-box-wrap"></div>
+
 			</div>
 			<div class="col-lg-4">
 				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port02.jpg" alt="" /></a>
@@ -135,7 +154,13 @@
 
 		</div>
 	</div>
+    <script>
+    $( document ).ready(function() {
+      console.log("foo");
+      $("[data-repo]").github();
 
+    });
+    </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
