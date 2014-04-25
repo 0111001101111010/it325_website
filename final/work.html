@@ -89,41 +89,37 @@
     <h1>Projects</h1>
 		<div class="row mt centered">
 			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port01.jpg" alt="" />
+				<a class="zoom green" href="http://gestice.org"><img class="img-responsive" src="assets/img/proj1.png" alt="" /></a>
+        <p>Gestice<p/>
+        <p>A pebble android companion app that launches apps by shaking</p>
+        <h4 style="color:#fdfd5e">Created for PennApps Spring 2014</h4>
 			</div>
 			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port02.jpg" alt="" /></a>
-				<p>RAIDERS</p>
+				<a class="zoom green" href="https://play.google.com/store/apps/details?id=com.DWS.neighborhoodwatch"><img class="img-responsive" src="assets/img/proj3.png" alt="" /></a>
+				<p>Neighborhood Watch</p>
+        <p>An Appcelerator Game Made with Lanica for DE Hackathon<p>
+        <h4 style="color:#fdfd5e">Best In Show</h4>
 			</div>
 			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port03.jpg" alt="" /></a>
-				<p>VIKINGS</p>
-			</div>
-		</div><!-- /row -->
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port04.jpg" alt="" /></a>
-				<p>YODA</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port05.jpg" alt="" /></a>
-				<p>EMPERORS</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port06.jpg" alt="" /></a>
-				<p>CHIEFS</p>
+				<a class="zoom green" href="http://c4hrva.us/codeacross"><img class="img-responsive" src="assets/img/proj2.png" width="400px" height="300px"  alt="" /></a>
+				<p>CodeAcross 2014 Site</p>
+        <p>Registration site for CodeforHamptonRoads Event</p>
+        <h4 style="color:#fdfd5e">Core Co-Organizer</h4>
 			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
 
-<div data-repo="jquery-boilerplate/jquery-boilerplate" class="github-box-wrap"></div></a>
-<div data-repo="zenorocha/dracula-theme" class="github-box-wrap"></div>
-<div data-repo="zenorocha/jquery-github" class="github-box-wrap"></div>
-<div data-repo="zenorocha/hub.me" class="github-box-wrap"></div>
-
+<div class="container pt">
+  <h1>Github</h1>
+  <div class="row mt centered">
+    <div data-repo="stanzheng/HackU2" class="github-box-wrap"></div></a>
+    <div data-repo="stanzheng/tribehacks" class="github-box-wrap"></div>
+    <div data-repo="stanzheng/c4hrva-landing" class="github-box-wrap"></div>
+    <div data-repo="cosmicmeow/odu-acm" class="github-box-wrap"></div>
+      </div><!-- /row -->
+    </div><!-- /container -->
 
 	<!-- +++++ Footer Section +++++ -->
-
 	<div id="footer">
 		<div class="container">
 			<div class="row">
@@ -154,11 +150,16 @@
 
 		</div>
 	</div>
+
+
     <script>
     $( document ).ready(function() {
       console.log("foo");
-      $("[data-repo]").github();
-
+        $("[data-repo]").github({
+            iconStars:  true,
+            iconForks:  true,
+            iconIssues: false
+        });
     });
     </script>
 
